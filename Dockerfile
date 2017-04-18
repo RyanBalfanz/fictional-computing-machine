@@ -5,4 +5,4 @@ RUN apt-get update && apt-get install -y python
 
 COPY . /app
 
-CMD ["python", "-m", "SimpleHTTPServer"]
+CMD ["python", "-m", "SimpleHTTPServer", "80"]
