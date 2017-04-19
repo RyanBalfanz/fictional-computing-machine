@@ -9,4 +9,4 @@ ADD requirements.txt /app/
 ADD . /app/
 RUN pip install -r requirements.txt
 
-CMD ["python", "-m", "SimpleHTTPServer"]
+CMD ["python", "server.py"]
