@@ -9,8 +9,8 @@ ENV INITSYSTEM on
 RUN mkdir /app
 ADD requirements.txt /app/
 ADD . /app/
-RUN pip install -r requirements.txt
 WORKDIR /app
+RUN pip install -r requirements.txt
 
 # CMD ["python", "server.py"]
 CMD ["python", "-m", "http.server"]
